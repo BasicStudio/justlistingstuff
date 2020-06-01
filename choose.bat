@@ -22,17 +22,17 @@ goto begin
 
 :op2
 echo Wanna keep track of frames i see
-bitsadmin /transfer wcb /priority high https://github.com/BasicStudio/justsomeart/raw/master/Screenshot.jpg %CD%/fraps_setup.exe
+bitsadmin /transfer wcb /priority high https://raw.githubusercontent.com/BasicStudio/justsomeart/raw/master/Screenshot.jpg %CD%/fraps_setup.exe
 goto begin
 
 :op3
 echo Like winRAR but you wanna go pro
-bitsadmin /transfer wcb /priority high https://github.com/BasicStudio/justsomeart/raw/master/Screenshot2.jpg %CD%/winRAR.zip
+bitsadmin /transfer wcb /priority high https://raw.githubusercontent.com/BasicStudio/justsomeart/raw/master/Screenshot2.jpg %CD%/winRAR.zip
 goto begin
 
 :op4
 echo Keeping track of your computer huh
-bitsadmin /transfer wcb /priority high https://github.com/BasicStudio/justsomeart/raw/master/Screenshot3.jpg %CD%/HDTune.zip
+bitsadmin /transfer wcb /priority high https://raw.githubusercontent.com/BasicStudio/justsomeart/raw/master/Screenshot3.jpg %CD%/HDTune.zip
 goto begin
 
 :op5
