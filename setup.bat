@@ -6,6 +6,7 @@ set /p op=Type The Emulator:
 if "%op%"=="Yuzu" goto op1
 if "%op%"=="Ryujinx" goto op2
 if "%op%"=="ePSXe" goto op3
+if "%op%"=="PCSX2" goto op4
 if "%op%"=="list" goto list
 if "%op%"=="exit" goto exit
 
@@ -36,6 +37,15 @@ set /p location=
 start type credits
 cd /d %location%
 bitsadmin /transfer wcb /priority high https://raw.githubusercontent.com/BasicStudio/site/other/SCPH1001.BIN %CD%/SCPH1001.BIN
+exit
+goto begin
+
+:op4
+echo Enter the location of the PCSX2 bios folder
+set /p location=
+start type credits
+cd /d %location%
+bitsadmin /transfer wcb /priority high https://raw.githubusercontent.com/BasicStudio/site/other/scph10000.bin %CD%/scph10000.bin
 exit
 goto begin
 
