@@ -14,7 +14,7 @@ echo Please Pick an option! To exit type 'exit' or to see the list do 'list'
 goto begin
 
 :op1
-start type credits
+start credits.bat
 cd /d C:/Users/%USERNAME%/AppData/Roaming/Yuzu/
 mkdir keys
 cd keys
@@ -23,7 +23,7 @@ exit
 goto begin
 
 :op2
-start type credits
+start credits.bat
 cd /d C:/Users/%USERNAME%/AppData/Roaming/Ryujinx/
 mkdir keys
 cd keys
@@ -34,7 +34,7 @@ goto begin
 :op3
 echo Enter the location of the ePSXe bios folder
 set /p location=
-start type credits
+start credits.bat
 cd /d %location%
 bitsadmin /transfer wcb /priority high https://raw.githubusercontent.com/BasicStudio/site/other/SCPH1001.BIN %CD%/SCPH1001.BIN
 exit
@@ -43,7 +43,7 @@ goto begin
 :op4
 echo Enter the location of the PCSX2 bios folder
 set /p location=
-start type credits
+start credits.bat
 cd /d %location%
 bitsadmin /transfer wcb /priority high https://raw.githubusercontent.com/BasicStudio/site/other/scph10000.bin %CD%/scph10000.bin
 exit
